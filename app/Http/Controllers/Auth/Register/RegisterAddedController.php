@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class RegisterAddedController extends Controller
 {
-    //
+    public function added() {
+        return view ('Auth.register-added');
+       }
 }

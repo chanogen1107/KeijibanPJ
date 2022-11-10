@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-掲示板課題やるぞ〜〜〜〜〜〜
+<h1>ログインページ</h1>
+<p>ログイン</p>
 </body>
 </html>

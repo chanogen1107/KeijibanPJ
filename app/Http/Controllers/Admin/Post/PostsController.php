@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
-    //
+    public function category() {
+        return view ('Post.category');
+       }
 }

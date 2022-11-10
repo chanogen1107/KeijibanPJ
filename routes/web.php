@@ -11,12 +11,32 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/top', function () {
-    return view('index');
-});
+//ログアウト中ページ
+Route::get('login', 'Auth\Login\LoginController@login')->name('login');
+Route::post('login', 'Auth\Login\LoginController@login')->name('login');
 
-// Route::get('/top', 'PostsController@index')->name('topview');
+Route::get('register', 'Auth\Register\RegisterController@register')->name('register');
+Route::post('register', 'Auth\Register\RegisterController@register')->name('register');
+
+Route::get('register-confirm', 'Auth\Register\RegisterConfirmController@confirm')->name('register-confirm');
+Route::post('register-confirm', 'Auth\Register\RegisterConfirmController@confirm')->name('register-confirm');
+
+Route::get('register-added', 'Auth\Register\RegisterAddedController@added')->name('register-added');
+Route::post('register-added', 'Auth\Register\RegisterAddedController@added')->name('register-added');
+
+
+//ログイン中ページ
+Route::get('top', 'User\Post\PostsController@index')->name('top');
+Route::post('top', 'User\Post\PostsController@index')->name('top');
+
+Route::get('post', 'User\Post\PostsController@post')->name('post');
+Route::post('post', 'User\Post\PostsController@post')->name('post');
+
+Route::get('category', 'Admin\Post\PostsController@category')->name('category');
+Route::post('category', 'Admin\Post\PostsController@category')->name('category');
