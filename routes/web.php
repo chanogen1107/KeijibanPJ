@@ -40,3 +40,7 @@ Route::post('post', 'User\Post\PostsController@post')->name('post');
 
 Route::get('category', 'Admin\Post\PostsController@category')->name('category');
 Route::post('category', 'Admin\Post\PostsController@category')->name('category');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
