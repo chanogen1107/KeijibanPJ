@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 //ログアウト中ページ
-Route::get('login', 'Auth\Login\LoginController@login')->name('login');
-Route::post('login', 'Auth\Login\LoginController@login')->name('login');
+Route::get('login', 'Auth\LoginController@login')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login');
 
 Route::get('register', 'Auth\Register\RegisterController@register')->name('register');
 Route::post('register', 'Auth\Register\RegisterController@register')->name('register');
