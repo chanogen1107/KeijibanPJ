@@ -41,7 +41,7 @@ class LoginController extends Controller
             if(Auth::attempt($data)){
                 return redirect('/top');
             }
-            dd($data);
+            // dd($data);
         }
         return view("auth.login");
     }
