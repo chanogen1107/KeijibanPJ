@@ -1,0 +1,61 @@
+/* 共通パーツ */
+h1{
+    color: #fff;
+}
+
+#all{
+    background:#f1e8f4;
+}
+/* ヘッダー */
+#head{
+    background:#4f1f49;
+}
+
+.head_box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* トップページ */
+.main_box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.main_post{
+    background-color: rgb(255, 255, 255);
+    border: #cdb4c7;
+    border-style:solid;
+    border-left-width:10px;
+    border-left-style:double;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+}
+
+.main_post_item{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+}
+
+.main_post_user{
+    font-weight: bold;
+    font-size: 20px;
+}
+.main_post_action{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main_action{
+    background-color: rgb(255, 205, 248);
+    width: 30%;
+}
+
+.title{
+    color: black;
+}
