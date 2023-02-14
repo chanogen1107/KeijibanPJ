@@ -3,12 +3,42 @@ h1{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
 #all{
     background:#f1e8f4;
+}
+
+
+.btn_blue{
+    background-color: #838383;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn_red{
+    background-color: #f76c6c;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
 }
 /* ヘッダー */
 #head{
     background:#4f1f49;
+    min-width: 100vh;
 }
 
 .head_box{
@@ -18,11 +48,16 @@ h1{
     padding: 10px;
 }
 
+.login_user{
+    font-weight: bold;
+    color:#fff;
+}
+
 /* トップページ */
 .main_box{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .main_post{
@@ -32,7 +67,8 @@ h1{
     border-left-width:10px;
     border-left-style:double;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
+    height: 200px;
     padding: 10px;
 }
 
@@ -53,7 +89,29 @@ h1{
 
 .main_action{
     background-color: rgb(255, 205, 248);
-    width: 30%;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    margin-left: 65px;
+    border: #ae88a5;
+    border-style:solid;
+    border-radius: 10px;
+}
+
+.main_action_item_box{
+    margin-top: 20px;
+}
+
+.main_action_search_box{
+    margin-top: 20px;
+}
+
+.main_action_search_btn{
+    text-decoration: none;
+}
+
+.main_action_fun_box{
+    margin-top: 20px;
 }
 
 .title{

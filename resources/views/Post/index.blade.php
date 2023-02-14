@@ -22,14 +22,18 @@
 
     <div class=main_action>
         <div class=main_action_item>
-            <a href= "/category" class=main_action_item_category>カテゴリー追加</a>
-            <a href= "/post" class=main_action_post>投稿</a>
+            <div class=main_action_item_box>
+                <a href= "/category" class="main_action_item_category btn_red">カテゴリー追加</a>
+                <a href= "/post" class="main_action_post btn_blue">投稿</a>
+            </div>
             <div class=main_action_search_box>
                 <input class=main_action_search></input>
-                <button class=main_action_search_btn>検索</button>
+                <button class="main_action_search_btn btn_blue">検索</button>
             </div>
-            <a href= "/" class=main_action_like>いいねした投稿</a>
-            <a href= "/" class=main_action_mine>自分の投稿</a>
+            <div class=main_action_fun_box>
+                <a href= "/" class="main_action_like btn_blue">いいねした投稿</a>
+                <a href= "/" class="main_action_mine btn_blue">自分の投稿</a>
+            </div>
         </div>
 
         <div class=main_action_category>

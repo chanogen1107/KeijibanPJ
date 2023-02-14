@@ -23,8 +23,8 @@
     <div class=head_box>
         <h1>ページタイトル</h1>
         <span class=login_item>
-            <p>ユーザー名さん</p>
-            <a href= "/logout">ログアウト</a>
+            <p class=login_user>{{ Auth::user()->username }}さん</p>
+            <a href= "/logout" class=btn_blue>ログアウト</a>
         </span>
     </div>
 </header>
