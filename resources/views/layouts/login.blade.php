@@ -21,7 +21,8 @@
 <body id =all>
 <header id=head>
     <div class=head_box>
-        <h1>ページタイトル</h1>
+        <h1>Pre-chat</h1>
+        <p>現在のページ</p>
         <span class=login_item>
             <p class=login_user>{{ Auth::user()->username }}さん</p>
             <a href= "/logout" class=btn_blue>ログアウト</a>

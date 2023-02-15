@@ -1,11 +1,15 @@
 /* 共通パーツ */
-h1{
-    color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+h1 {
+  font-family: 'Itim';
+  font-weight: bold;
+  color: #fff;
 }
 
 a{
     text-decoration: none;
-    color: #ffffff;
 }
 
 button{
@@ -17,6 +21,63 @@ button{
     appearance: none;
 }
 
+
+/* ログインページ */
+
+#login_all{
+    background:#f1e8f4
+}
+
+.login_title{
+    font-size: 60px;
+    color: rgb(46, 39, 52);
+    text-align: center;
+}
+#app{
+    
+}
+
+.container{
+    background:#ffffff;
+    border-bottom:#ae88a5;
+    border-bottom-style: dashed;
+    border-top-right-radius: 30px;
+    width: 30%;
+    height: 78px;
+    margin: auto;
+}
+
+.login_container{
+    background:#ffffff;
+    border-color: #ae88a5;
+    border-width: 3px;
+    border-style: dotted;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+.card{
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form-group{
+    text-align: left;
+}
+
+.login_btn{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+
 #all{
     background:#f1e8f4;
 }
@@ -27,6 +88,7 @@ button{
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
+    color: #fff;
 }
 
 .btn_red{

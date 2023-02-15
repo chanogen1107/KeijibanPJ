@@ -14,7 +14,7 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     public function show() {
-        dd("test");
+        // dd("test");
         return view ('Auth.register');
        }
 
