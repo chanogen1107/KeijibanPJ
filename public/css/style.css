@@ -116,7 +116,7 @@ button{
 }
 
 /* トップページ */
-.main_box{
+.box{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -160,6 +160,10 @@ button{
     border-radius: 10px;
 }
 
+.main_action_category a{
+    display: block;
+}
+
 .main_action_item_box{
     margin-top: 20px;
 }
@@ -178,4 +182,11 @@ button{
 
 .title{
     color: black;
+}
+
+/* カテゴリーページ */
+
+.category_box input label button{
+    display: block;
+
 }

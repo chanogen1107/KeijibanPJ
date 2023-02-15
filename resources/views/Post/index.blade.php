@@ -1,9 +1,9 @@
 @extends('layouts.login')
 
 @section('content')
-<button class=btn>js動作確認ボタン</button>
+<button class=btn_blue>js動作確認ボタン</button>
 <p class=title>css確認うさぎ</p>
-<div class=main_box>
+<div class=box>
     <div class=main_post>
         <div class=main_post_item>
             <p class=main_post_user>〇〇さん</p>
@@ -31,21 +31,21 @@
                 <button class="main_action_search_btn btn_blue">検索</button>
             </div>
             <div class=main_action_fun_box>
-                <a href= "/" class="main_action_like btn_blue">いいねした投稿</a>
-                <a href= "/" class="main_action_mine btn_blue">自分の投稿</a>
+                <a href= "/top" class="main_action_like btn_blue">いいねした投稿</a>
+                <a href= "/top" class="main_action_mine btn_blue">自分の投稿</a>
             </div>
         </div>
 
         <div class=main_action_category>
             <p class=main_category_title>カテゴリー</p>
             <p class=main_category>メインカテゴリー１</p>
-                <a href= "/" class=sub_category>サブカテゴリー１</a>
-                <a href= "/" class=sub_category>サブカテゴリー２</a>
-                <a href= "/" class=sub_category>サブカテゴリー３</a>
+                <a href= "/top" class=sub_category>サブカテゴリー１</a>
+                <a href= "/top" class=sub_category>サブカテゴリー２</a>
+                <a href= "/top" class=sub_category>サブカテゴリー３</a>
             <p class=main_category>メインカテゴリー２</p>
-                <a href= "/" class=sub_category>サブカテゴリー１</a>
-                <a href= "/" class=sub_category>サブカテゴリー２</a>
-                <a href= "/" class=sub_category>サブカテゴリー３</a>
+                <a href= "/top" class=sub_category>サブカテゴリー１</a>
+                <a href= "/top" class=sub_category>サブカテゴリー２</a>
+                <a href= "/top" class=sub_category>サブカテゴリー３</a>
         </div>
     </div>
 </div>
