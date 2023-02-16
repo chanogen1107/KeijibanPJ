@@ -12,4 +12,14 @@ class PostSubCategory extends Model
         'post_main_category_id',
         'sub_category',
     ];
+
+    // public function posts()
+    // {
+    //     return $this->hasOne('App\Models\Posts\Post','post_sub_category_id');
+    // }
+
+    public function PostMainCategory()
+    {
+        return $this->belongsTo('App\Models\Posts\PostMainCategory');
+    }
 }

@@ -11,4 +11,9 @@ class PostMainCategory extends Model
     protected $fillable = [
         'main_category',
     ];
+
+      public function PostSubCategories()
+    {
+        return $this->hasMany('App\Models\Posts\PostSubCategory','post_main_category_id');
+    }
 }

@@ -129,9 +129,10 @@ button{
     border-left-width:10px;
     border-left-style:double;
     border-radius: 10px;
-    width: 50%;
+    width: 700px;
     height: 200px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .main_post_item{

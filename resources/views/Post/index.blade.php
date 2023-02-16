@@ -4,21 +4,27 @@
 <button class=btn_blue>js動作確認ボタン</button>
 <p class=title>css確認うさぎ</p>
 <div class=box>
-    <div class=main_post>
-        <div class=main_post_item>
-            <p class=main_post_user>〇〇さん</p>
-            <p class=main_post_time>〇年〇月〇日</p>
-            <p class=main_post_view>〇View</p>
+    
+    <div class=main_post_box>
+    @foreach($posts as $post)
+        <div class=main_post>
+            <div class=main_post_item>
+                <p class=main_post_user>{{$post->User->username}}</p>
+                <p class=main_post_time>{{$post->created_at}}</p>
+                <p class=main_post_view>〇View</p>
+            </div>
+            <div class=main_post_text>
+                <p class=main_post_title>{{$post->title}}</p>
+            </div>
+            <div class=main_post_action>
+                <p class=main_post_category>{{$post->post_sub_category_id}}</p>
+                <p class=main_post_comment>コメント〇件</p>
+                <p class=main_post_like>いいね〇件</p>
+            </div>
         </div>
-        <div class=main_post_text>
-            <p class=main_post_title>ここにタイトルが入ります。</p>
-        </div>
-        <div class=main_post_action>
-            <p class=main_post_category>サブカテゴリー１</p>
-            <p class=main_post_comment>コメント〇件</p>
-            <p class=main_post_like>いいね〇件</p>
-        </div>
+        @endforeach
     </div>
+    
 
     <div class=main_action>
         <div class=main_action_item>
@@ -37,15 +43,10 @@
         </div>
 
         <div class=main_action_category>
-            <p class=main_category_title>カテゴリー</p>
-            <p class=main_category>メインカテゴリー１</p>
-                <a href= "/top" class=sub_category>サブカテゴリー１</a>
-                <a href= "/top" class=sub_category>サブカテゴリー２</a>
-                <a href= "/top" class=sub_category>サブカテゴリー３</a>
-            <p class=main_category>メインカテゴリー２</p>
-                <a href= "/top" class=sub_category>サブカテゴリー１</a>
-                <a href= "/top" class=sub_category>サブカテゴリー２</a>
-                <a href= "/top" class=sub_category>サブカテゴリー３</a>
+        @foreach($Mein_Cates as $Mein_Cate)
+            <ul class=main_category_title>{{$Mein_Cate->main_category}}</ul>
+                <a href= "/top"><li class=sub_category></li></a>
+        @endforeach
         </div>
     </div>
 </div>
