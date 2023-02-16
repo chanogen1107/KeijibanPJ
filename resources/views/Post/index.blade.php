@@ -4,10 +4,9 @@
 <button class=btn_blue>js動作確認ボタン</button>
 <p class=title>css確認うさぎ</p>
 <div class=box>
-    
     <div class=main_post_box>
     @foreach($posts as $post)
-        <div class=main_post>
+        <a href = "{{ route('post_detail', ['id' => $post->id]) }}"><div class=main_post>
             <div class=main_post_item>
                 <p class=main_post_user>{{$post->User->username}}</p>
                 <p class=main_post_time>{{$post->created_at}}</p>
@@ -21,10 +20,9 @@
                 <p class=main_post_comment>コメント〇件</p>
                 <p class=main_post_like>いいね〇件</p>
             </div>
-        </div>
+        </div></a>
         @endforeach
     </div>
-    
 
     <div class=main_action>
         <div class=main_action_item>

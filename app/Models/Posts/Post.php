@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    protected $table = 'posts';
+    // protected $table = 'posts';
 
     protected $fillable = [
         'user_id',
@@ -23,10 +23,10 @@ class Post extends Model
         return $this->belongsTo('App\Models\Users\User');
     }
 
-    // public function post_sub_categories()
-    // {
-    //     return $this->belongsTo('App\Models\Posts\PostSubCategory','id');
-    // }
+    public function post_sub_categories()
+    {
+        return $this->hasOne(PostSubCategory::class,'post_sub_category_id');
+    }
 
     
 }

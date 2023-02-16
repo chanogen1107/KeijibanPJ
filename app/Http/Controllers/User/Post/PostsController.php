@@ -15,17 +15,22 @@ class PostsController extends Controller
 {
     public function index() {
     //postsテーブル内容を$postsに格納
-    // dd(PostMainCategory::with('PostSubCategory')->get());
+    // リレーション繋がらない〜
+    // dd(Post::with('PostSubCategory')->get());
     $posts=Post::all();
 
-    $Mein_Cates=DB::table('post_main_categories')->get();
+    $Mein_Cates=PostMainCategory::all();
 
-    $Sub_Cates=DB::table('post_sub_categories')->get();
+    $Sub_Cates=PostSubCategory::all();
 
     return view ('Post.index',compact('posts','Mein_Cates','Sub_Cates'));
    }
 
    public function post() {
     return view ('Post.post');
+   }
+
+   public function post_detail() {
+    return view ('Post.post-detail');
    }
 }

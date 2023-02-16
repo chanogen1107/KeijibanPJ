@@ -43,6 +43,8 @@ Route::post('top', 'User\Post\PostsController@index');
 Route::get('post', 'User\Post\PostsController@post')->name('post');
 Route::post('post', 'User\Post\PostsController@post')->name('post');
 
+Route::get('post_detail/{id}', 'User\Post\PostsController@post_detail')->name('post_detail');
+
 Route::get('category', 'Admin\Post\PostsController@category')->name('category');
 Route::post('category', 'Admin\Post\PostsController@category')->name('category');
 
