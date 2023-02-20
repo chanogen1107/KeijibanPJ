@@ -30,7 +30,10 @@ class PostsController extends Controller
     return view ('Post.post');
    }
 
-   public function post_detail() {
-    return view ('Post.post-detail');
+   public function post_detail($id) {
+
+    $posts=Post::find($id);
+
+    return view ('Post.post-detail',compact('posts'));
    }
 }

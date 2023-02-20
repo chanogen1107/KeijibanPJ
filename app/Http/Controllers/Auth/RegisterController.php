@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\Users\User;
 
 class RegisterController extends Controller
 {
@@ -18,7 +19,26 @@ class RegisterController extends Controller
         return view ('Auth.register');
        }
 
-    public function register() {
-        return view ('Auth.register');
+    public function register(Request $request) {
+        //バリデーション
+        // dd($request);
+        // $this->validate($request,[
+        //     'name' => 'required',
+        //     'email' => 'email|required|unique:users',
+        //     'password' => 'required|min:4',
+        //     'password_confirmation' => 'required|confirmed'
+        //   ]);
+         
+          // DBインサート
+          $user = new User([
+            'username' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => bcrypt($request->input('password')),
+          ]);
+         
+          // 保存
+          $user->save();
+        
+        return view ('Auth.register-added');
        }
 }

@@ -8,16 +8,16 @@
 <div class=box>
     <div class=post_detail_box>
         <div class=post_detail_item>
-            <p class=post_detail_user>ooさん</p>
-            <p class=post_detail_time>0000-00-00</p>
+            <p class=post_detail_user>{{$posts->User->username}}さん</p>
+            <p class=post_detail_time>{{$posts->created_at}}</p>
             <p class=post_detail_view>0view</p>
         </div>
         <div class=post_detail_text>
-            <p class=post_detail_title>タイトル</p>
+            <p class=post_detail_title>{{$posts->title}}</p>
             <button class="post_detail_edit btn_blue">編集</button>
         </div>
         <div class=post_detail_posts>
-            <p class=post_detail_post>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+            <p class=post_detail_post>{{$posts->post}}</p>
         </div>
         <div class=post_detail_footer>
             <button class="post_detail_sub btn_blue">サブカテゴリー</button>
