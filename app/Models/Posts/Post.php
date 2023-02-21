@@ -23,9 +23,9 @@ class Post extends Model
         return $this->belongsTo('App\Models\Users\User');
     }
 
-    public function post_sub_categories()
+    public function post_sub_category()
     {
-        return $this->hasOne(PostSubCategory::class,'post_sub_category_id');
+        return $this->belongsTo('App\Models\Posts\PostSubCategory');
     }
 
     

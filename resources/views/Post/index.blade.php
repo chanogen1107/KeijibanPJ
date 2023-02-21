@@ -16,7 +16,7 @@
                 <p class=main_post_title>{{$post->title}}</p>
             </div>
             <div class=main_post_action>
-                <p class=main_post_category>{{$post->post_sub_category_id}}</p>
+                <p class=main_post_category>{{$post->post_sub_category->sub_category}}</p>
                 <p class=main_post_comment>コメント〇件</p>
                 <p class=main_post_like>いいね〇件</p>
             </div>

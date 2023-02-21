@@ -16,7 +16,7 @@ class PostsController extends Controller
     public function index() {
     //postsテーブル内容を$postsに格納
     // リレーション繋がらない〜
-    // dd(Post::with('PostSubCategory')->get());
+    // dd(PostSubCategory::with('post_main_category')->get());
     $posts=Post::all();
 
     $Mein_Cates=PostMainCategory::all();
